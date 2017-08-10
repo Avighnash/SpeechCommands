@@ -4,7 +4,12 @@ SpeechCommands is a wrapper, or utility, that utilizes the Speech framework prov
 
 Example: User says "hello", Speech framework translates that into text, and finally, SpeechCommands checks if a command is registered with that text, and executes an action.
 
-This was mashed together by me in a couple of hours, it's not perfect, so if you encounter any bugs, or any bad stuff happens, pls don't kill me xD
+/!\ IMPORTANT /!\
+1. This was mashed together by me in a couple of hours, it's not perfect, so if you encounter any bugs, or any bad stuff happens, pls don't kill me xD
+
+2. The session automatically stops after a command is detected. If you want to change that, it will cause other problems.
+
+3. Spamming SCommandSession#start() / SCommandSession#stop() will crash your app, I will try to fix in the future.
 
 Installation:
 Just download the files and import them into your project. 
@@ -52,6 +57,7 @@ class ViewController: UIViewController {
 
 TODO:
 - Command alias support
+- Fix #stop() and #start() problems
 
 (if you have any suggestions tell me here)
 
