@@ -6,6 +6,9 @@ Example: User says "hello", Speech framework translates that into text, and fina
 
 This was mashed together by me in a couple of hours, it's not perfect, so if you encounter any bugs, or any bad stuff happens, pls don't kill me xD
 
+Installation:
+Just download the files and import them into your project. 
+
 Usage:
 ```Swift
 import UIKit
